@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    background: #9fdaff;
+    min-width: 1000px;
+}
+
+header {
+    position: static;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    background: #01b8ff;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 70px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+input {
+    height: 60px;
+    width: 100%;
+    background: #04a6e4;
+    border: none;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 60px;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.743);
+}
+
+button {
+    position: absolute;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    background: #02b7ff;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #268ebc;
+}
+
+img {
+    height: 20%;
+    width: 20%;
+    filter: invert(1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #a0d9fe;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 600px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    background: #02b7ff;
+    color: white;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.task-text {
+    flex-grow: 1;
+}
+
+.trash-icon {
+    height: 22px;
+    width: 22px;
+    filter: invert(1);
+}
+
+.trash-icon:hover {
+    filter: invert(0);
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    body {
+        min-width: initial;
+    }
+
+    header {
+        font-size: 1.5em;
+        padding: 30px; 
+    }
+
+    form {
+        top: 120px; 
+    }
+
+    input {
+        padding: 15px 20px; 
+    }
+
+    main {
+        width: 100%; 
+    }
+
+    li {
+        padding: 15px; 
+        top: 30px; 
+        left: 20px; 
+    }
+
+    input[type="submit"] {
+        right: 20px;
+        width: 68px;
+        height: 68px;
+        padding: 20px; 
+    }
+}
+
+@media (max-width: 440px) {
+    header {
+        font-size: 1em;
+    }
+}
